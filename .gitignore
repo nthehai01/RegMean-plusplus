@@ -10,6 +10,7 @@
 /temp/
 outputs/
 font/
+plots_and_metrics/
 /results/
 lightning_logs/
 

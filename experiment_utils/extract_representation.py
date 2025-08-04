@@ -34,7 +34,7 @@ def get_representation(candidate_path, dataset_name, task_name, model_name, outp
 	clip_model = CLIPModel.from_pretrained(base_model_path, device_map='auto')
 	clip_model.vision_model.load_state_dict(vision_model.vision_model.state_dict())
 
-	clip_processor = CLIPProcessor.from_pretrained(base_model_path, local_files_only=True)
+	clip_processor = CLIPProcessor.from_pretrained(base_model_path, local_files_only=False)
 	clip_model = HFCLIPClassifier(clip_model, processor=clip_processor)
 
 	classnames, templates = get_classnames_and_templates(task_name)

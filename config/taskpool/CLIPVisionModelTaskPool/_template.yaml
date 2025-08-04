@@ -12,7 +12,7 @@ clip_model:
 processor:
   _target_: transformers.CLIPProcessor.from_pretrained
   pretrained_model_name_or_path: ${..base_model} # The base model to use
-  local_files_only: True
+  local_files_only: False
 data_processor: ${.processor}
 dataloader_kwargs:
   batch_size: 128 # The batch size for the data loader

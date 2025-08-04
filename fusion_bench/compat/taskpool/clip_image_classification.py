@@ -136,7 +136,7 @@ class CLIPImageClassificationTaskPool(TaskPool):
         if self._clip_processor is None:
             self._clip_processor = CLIPProcessor.from_pretrained(
                 self.config["clip_model"],
-                local_files_only=True
+                local_files_only=False
             )
         return self._clip_processor
 

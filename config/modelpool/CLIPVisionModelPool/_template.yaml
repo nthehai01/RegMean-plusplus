@@ -10,4 +10,4 @@ test_datasets: null
 processor:
   _target_: transformers.CLIPProcessor.from_pretrained
   pretrained_model_name_or_path: openai/clip-vit-base-patch32
-  local_files_only: True
+  local_files_only: False
