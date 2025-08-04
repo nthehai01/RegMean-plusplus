@@ -1,0 +1,6 @@
+defaults:
+  - imagenet
+  - cifar10
+  - emnist_letters
+  - svhn
+  - fer2013

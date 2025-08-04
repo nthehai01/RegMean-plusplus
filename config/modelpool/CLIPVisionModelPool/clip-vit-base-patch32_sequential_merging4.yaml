@@ -1,0 +1,7 @@
+defaults:
+  - CLIPVisionModelPool@: _template
+  - /model/clip-vit@models: clip-vit-base-patch32_sequential_merging4
+  - /dataset/image_classification/train@train_datasets: sequential_merging4
+processor:
+  _target_: transformers.CLIPProcessor.from_pretrained
+  pretrained_model_name_or_path: openai/clip-vit-base-patch32

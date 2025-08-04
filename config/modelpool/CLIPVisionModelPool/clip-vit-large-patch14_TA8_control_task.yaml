@@ -1,0 +1,22 @@
+defaults:
+  - _self_
+  - /model/clip-vit@models:
+      - clip-vit-large-patch14
+      - clip-vit-large-patch14_sun397
+      - clip-vit-large-patch14_stanford-cars
+      - clip-vit-large-patch14_resisc45
+      - clip-vit-large-patch14_eurosat
+      - clip-vit-large-patch14_svhn
+      - clip-vit-large-patch14_gtsrb
+      - clip-vit-large-patch14_mnist
+      - clip-vit-large-patch14_dtd
+  - /dataset/image_classification/train@train_datasets:
+      - imagenet
+_target_: fusion_bench.modelpool.CLIPVisionModelPool
+_recursive_: false
+models: ???
+train_datasets: ???
+processor:
+  _target_: transformers.CLIPProcessor.from_pretrained
+  pretrained_model_name_or_path: openai/clip-vit-large-patch14
+  local_files_only: True

@@ -1,0 +1,8 @@
+defaults:
+  # pre-trained model
+  - clip-vit-base-patch32
+  # candidates
+  - clip-vit-base-patch32_gtsrb
+  - clip-vit-base-patch32_stanford-cars
+  - clip-vit-base-patch32_sun397
+  - clip-vit-base-patch32_fashion_mnist

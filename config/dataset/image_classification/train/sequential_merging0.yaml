@@ -1,0 +1,5 @@
+defaults:
+  - gtsrb
+  - stanford-cars
+  - sun397
+  - fashion_mnist

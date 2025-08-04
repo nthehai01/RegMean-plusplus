@@ -1,0 +1,9 @@
+defaults:
+  # pre-trained model
+  - clip-vit-base-patch32
+  # candidates
+  - clip-vit-base-patch32_previous_merged_model
+  - clip-vit-base-patch32_cifar10
+  - clip-vit-base-patch32_emnist_letters
+  - clip-vit-base-patch32_svhn
+  - clip-vit-base-patch32_fer2013

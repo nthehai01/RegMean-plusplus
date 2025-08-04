@@ -1,0 +1,3 @@
+imagenet:
+  _target_: datasets.load_from_disk
+  dataset_path: calibration_data/ILSVRC--imagenet-1k.first10ksamples
