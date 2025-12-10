@@ -4,9 +4,11 @@
 
 *Regression Mean (RegMean), an approach that formulates model merging as a linear regression problem, aims to find the optimal weights for each linear layer in the merge model by minimizing the discrepancy in predictions between the merge and candidate models. RegMean provides a precise closed-form solution for the merging problem; therefore, it offers explainability and computational efficiency. However, RegMean merges each linear layer independently, overlooking how the features and information in the earlier layers propagate through the layers and influence the final prediction in the merge model. In this paper, we introduce RegMean++, a simple yet effective alternative to RegMean, that explicitly incorporates both intra- and cross-layer dependencies between merge models' layers into RegMean's objective. By accounting for these dependencies, RegMean++ better captures the behaviors of the merge model. Extensive experiments demonstrate that RegMean++ consistently outperforms RegMean across diverse settings, including in-domain (ID) and out-of-domain (OOD) generalization, sequential merging, large-scale tasks, and robustness under several types of distribution shifts. Furthermore, RegMean++ achieves competitive or state-of-the-art performance compared to various recent advanced model merging methods.*
 
-## FusionBench Integration
+## FusionBench and MergeBench Integration
 
-Alternatively, you can run RegMean++ on [FusionBench](https://tanganke.github.io/fusion_bench/) by checking out the docs [here](https://tanganke.github.io/fusion_bench/algorithms/regmean_plusplus/).
+Alternatively, for _vision tasks_, you can run RegMean++ on [FusionBench](https://tanganke.github.io/fusion_bench/) by checking out the docs [here](https://tanganke.github.io/fusion_bench/algorithms/regmean_plusplus/).
+
+To run RegMean++ on _language tasks_, check out [MergeBench](https://github.com/uiuctml/MergeBench).
 
 ## Code For Reproducing the Results in the Paper
 
